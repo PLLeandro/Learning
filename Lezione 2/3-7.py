@@ -15,8 +15,9 @@ for people_invite in people_invited:
 while len(people_invited) > 2:
     removed_people_invite = people_invited.pop()
     print(f"Sorry, {removed_people_invite}, I can't invite you to dinner.")
+
 for people_invite in people_invited:
     print(f"Dear {people_invite}, you are still invited to dinner!")
-    del people_invited[:]
 
-print("The guest list is now empty:", people_invited)
+del people_invited[:]
+
